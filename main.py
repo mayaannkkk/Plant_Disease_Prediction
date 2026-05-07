@@ -32,7 +32,10 @@ if not os.path.exists(model_path):
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(model_path)
+    return tf.keras.models.load_model(
+        model_path,
+        compile=False
+    )
 
 model = load_model()
 
