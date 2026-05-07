@@ -108,7 +108,7 @@ if uploaded_image is not None:
         st.image(
             resized_img,
             caption="Uploaded Image",
-            use_container_width=True
+            width=250
         )
 
     with col2:
